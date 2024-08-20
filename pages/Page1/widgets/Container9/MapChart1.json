@@ -1,0 +1,39 @@
+{
+  "borderRadius": "0px",
+  "bottomRow": 72,
+  "boxShadow": "none",
+  "colorRange": "[\n  {\n    \"minValue\": 1,\n    \"maxValue\": 200,\n    \"code\": \"ECB365\"\n  },\n  {\n    \"minValue\": 100,\n    \"maxValue\": 1000,\n    \"code\": \"#61A4BC\"\n  },\n  {\n    \"minValue\": 1000,\n    \"maxValue\": 10000,\n    \"code\": \"#03B365\"\n  }\n]",
+  "data": "{{utils.mappedCountries()}}",
+  "displayName": "Map Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "data"
+    },
+    {
+      "key": "fontFamily"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.16600780.svg",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "hkw7u36yfa",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "mapTitle": "Sales by Country",
+  "mapType": "NORTH_AMERICA",
+  "parentColumnSpace": 12.580078125,
+  "parentId": "02711k31ou",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "showLabels": false,
+  "topRow": 40,
+  "type": "MAP_CHART_WIDGET",
+  "version": 1,
+  "widgetId": "482d3wjpun",
+  "widgetName": "MapChart1"
+}

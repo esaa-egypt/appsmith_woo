@@ -1,0 +1,186 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "borderRadius": "0px",
+  "bottomRow": 77,
+  "boxShadow": "none",
+  "children": [
+    {
+      "borderRadius": "0px",
+      "bottomRow": 390,
+      "boxShadow": "none",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dropDisabled": true,
+      "dynamicBindingPathList": [],
+      "hideCard": true,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "ffadum178l",
+      "labelTextSize": "0.875rem",
+      "leftColumn": 0,
+      "minHeight": 400,
+      "noPad": true,
+      "openParentPropertyPane": true,
+      "parentColumnSpace": 1,
+      "parentId": "f2qr15clrv",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 243.1171875,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "sdvfep8epy",
+      "widgetName": "Canvas3"
+    }
+  ],
+  "displayName": "List",
+  "dynamicBindingPathList": [
+    {
+      "key": "listData"
+    },
+    {
+      "key": "template.Text2.text"
+    },
+    {
+      "key": "template.Text3.text"
+    },
+    {
+      "key": "template.Image2.image"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enhancements": true,
+  "gridGap": 0,
+  "gridType": "vertical",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9925ee17.svg",
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "itemBackgroundColor": "#FFFFFF",
+  "key": "bkegg2s7tq",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "listData": "{{ get_customers_ranking.data }}",
+  "parentColumnSpace": 10.1298828125,
+  "parentId": "7dwqw7z89d",
+  "parentRowSpace": 10,
+  "privateWidgets": {
+    "undefined": true
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "template": {
+    "Image2": {
+      "animateLoading": true,
+      "bottomRow": 8,
+      "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+      "displayName": "Image",
+      "dynamicBindingPathList": [
+        {
+          "key": "image"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "enableDownload": false,
+      "enableRotation": false,
+      "hideCard": false,
+      "iconSVG": "/static/media/icon.52d8fb96.svg",
+      "image": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'https://i.pravatar.cc/' + currentIndex * 100;\n              })();\n            })}}",
+      "imageShape": "RECTANGLE",
+      "isLoading": false,
+      "isVisible": true,
+      "key": "vjoahs3y00",
+      "leftColumn": 0,
+      "maxZoomLevel": 1,
+      "objectFit": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'cover';\n              })();\n            })}}",
+      "parentId": "wrdgmx2v8r",
+      "renderMode": "CANVAS",
+      "rightColumn": 16,
+      "topRow": 0,
+      "type": "IMAGE_WIDGET",
+      "version": 1,
+      "widgetId": "c9ul8ugtaf",
+      "widgetName": "Image2"
+    },
+    "Text2": {
+      "animateLoading": true,
+      "bottomRow": 4,
+      "displayName": "Text",
+      "dynamicBindingPathList": [
+        {
+          "key": "text"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "fontSize": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'HEADING2';\n              })();\n            })}}",
+      "fontStyle": "BOLD",
+      "hideCard": false,
+      "iconSVG": "/static/media/icon.97c59b52.svg",
+      "isLoading": false,
+      "isVisible": true,
+      "key": "czyq0gtp0e",
+      "leftColumn": 16,
+      "parentId": "wrdgmx2v8r",
+      "renderMode": "CANVAS",
+      "rightColumn": 28,
+      "shouldScroll": false,
+      "shouldTruncate": false,
+      "text": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return   currentItem.name ;\n              })();\n            })}}",
+      "textAlign": "LEFT",
+      "textColor": "#231F20",
+      "textStyle": "HEADING",
+      "topRow": 0,
+      "truncateButtonColor": "#FFC13D",
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "42q83cohbe",
+      "widgetName": "Text2"
+    },
+    "Text3": {
+      "animateLoading": true,
+      "bottomRow": 8,
+      "displayName": "Text",
+      "dynamicBindingPathList": [
+        {
+          "key": "text"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "fontSize": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'HEADING3';\n              })();\n            })}}",
+      "fontStyle": "",
+      "hideCard": false,
+      "iconSVG": "/static/media/icon.97c59b52.svg",
+      "isLoading": false,
+      "isVisible": true,
+      "key": "czyq0gtp0e",
+      "leftColumn": 16,
+      "parentId": "wrdgmx2v8r",
+      "renderMode": "CANVAS",
+      "rightColumn": 24,
+      "shouldScroll": false,
+      "shouldTruncate": false,
+      "text": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'Revenue: ' +  utils.currencyFormat(currentItem.revenue)  + ' <br />Orders: ' +  currentItem.orders ;\n              })();\n            })}}",
+      "textAlign": "LEFT",
+      "textColor": "#231F20",
+      "textStyle": "BODY",
+      "topRow": 4,
+      "truncateButtonColor": "#FFC13D",
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "j1r76163so",
+      "widgetName": "Text3"
+    }
+  },
+  "topRow": 8,
+  "type": "LIST_WIDGET",
+  "widgetId": "f2qr15clrv",
+  "widgetName": "List1"
+}

@@ -1,0 +1,1 @@
+SELECT status as "label", COUNT(order_id) as "value" FROM `wp_wc_order_stats` WHERE {{utils.timeframe()[0]}} GROUP BY status

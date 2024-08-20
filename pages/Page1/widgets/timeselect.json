@@ -1,0 +1,232 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemfixr998w1s.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem2.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButtonh7781km7xm.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton1.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton2.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButtonouhrfpzpeq.isDisabled"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButtonouhrfpzpeq.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton2.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton1.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButtonh7781km7xm.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem2.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemfixr998w1s.isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonouhrfpzpeq.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonh7781km7xm.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemfixr998w1s.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#2E3D49",
+      "buttonType": "SIMPLE",
+      "id": "groupButton1",
+      "index": 2,
+      "isDisabled": "{{utils.currentButton(\"mtd\")}}",
+      "isVisible": true,
+      "label": "Month to date",
+      "menuItems": {},
+      "onClick": "{{utils.setButton('mtd')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#2E3D49",
+      "buttonType": "SIMPLE",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": "{{utils.currentButton(\"wtd\")}}",
+      "isVisible": true,
+      "label": "Week to date",
+      "menuItems": {},
+      "onClick": "{{utils.setButton('wtd')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "#2E3D49",
+      "buttonType": "MENU",
+      "iconName": "more",
+      "id": "groupButton3",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "More",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#2E3D49",
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": "{{utils.currentButton(\"yesterday\")}}",
+          "isVisible": true,
+          "label": "Yesterday",
+          "onClick": "{{utils.setButton('yesterday')}}",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#2E3D49",
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": "{{utils.currentButton(\"lw\")}}",
+          "isVisible": true,
+          "label": "Last Week",
+          "onClick": "{{utils.setButton('lw')}}",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#2E3D49",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": "{{utils.currentButton(\"lm\")}}",
+          "isVisible": true,
+          "label": "Last Month",
+          "onClick": "{{utils.setButton('lm')}}",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        },
+        "menuItemfixr998w1s": {
+          "backgroundColor": "#2E3D49",
+          "id": "menuItemfixr998w1s",
+          "index": 3,
+          "isDisabled": "{{utils.currentButton(\"ly\")}}",
+          "isVisible": true,
+          "label": "Last Year",
+          "onClick": "{{utils.setButton('ly')}}",
+          "textColor": "#FFFFFF",
+          "widgetId": "fein13n7d0"
+        }
+      },
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonh7781km7xm": {
+      "buttonColor": "#2E3D49",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonh7781km7xm",
+      "index": 3,
+      "isDisabled": "{{utils.currentButton(\"ytd\")}}",
+      "isVisible": true,
+      "label": "Year to date",
+      "menuItems": {},
+      "onClick": "{{utils.setButton('ytd')}}",
+      "placement": "CENTER",
+      "widgetId": "z7tss8r6mh"
+    },
+    "groupButtonouhrfpzpeq": {
+      "buttonColor": "#2E3D49",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonouhrfpzpeq",
+      "index": 0,
+      "isDisabled": "{{utils.currentButton(\"today\")}}",
+      "isVisible": true,
+      "label": "Today",
+      "menuItems": {},
+      "onClick": "{{utils.setButton('today')}}",
+      "placement": "CENTER",
+      "widgetId": "odq50oli02"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.d6773218.svg",
+  "isCanvas": false,
+  "isDisabled": "false",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ys169xzqek",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 10,
+  "orientation": "horizontal",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 54,
+  "topRow": 13,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "4feea98rq7",
+  "widgetName": "timeselect"
+}

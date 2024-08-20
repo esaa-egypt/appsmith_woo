@@ -1,0 +1,8 @@
+SET @rownum = 0;
+SELECT @rownum:=(@rownum+1) as "rank", `rev`.`revenue`, `rev`.`orders`, `nm`.`first_name` as "name" FROM 
+
+( SELECT *, SUM(total_sales) as "revenue", count(order_id) as "orders"  FROM `wp_wc_order_stats` WHERE {{utils.timeframe()[0]}} GROUP BY customer_id ORDER BY `revenue` DESC LIMIT 20) as rev
+LEFT JOIN 
+( SELECT * FROM `wp_wc_customer_lookup`  ) as nm
+
+ON `rev`.`customer_id` = `nm`.`customer_id`

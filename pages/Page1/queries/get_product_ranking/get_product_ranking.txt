@@ -1,0 +1,9 @@
+SET @rownum = 0;
+SELECT @rownum:=(@rownum+1) as "rank", `rev`.`revenue`, `rev`.`orders`, `nm`.`title` FROM 
+
+( SELECT *, SUM(product_net_revenue) as "revenue", count(order_id) as "orders" FROM `wp_wc_order_product_lookup` WHERE {{utils.timeframe()[0]}} GROUP BY product_id  
+ORDER BY `revenue`  DESC ) as rev
+LEFT JOIN 
+( SELECT post_title as "title", ID FROM `wp_posts` ) as nm
+
+ON `rev`.`product_id` = `nm`.`ID`

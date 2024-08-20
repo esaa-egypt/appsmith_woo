@@ -1,0 +1,1 @@
+SELECT SUM(total_sales) as "revenue", COUNT(order_id) as "orders" FROM `wp_wc_order_stats` WHERE {{utils.timeframe()[0]}}

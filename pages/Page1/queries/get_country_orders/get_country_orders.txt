@@ -1,0 +1,7 @@
+SELECT SUM(`rev`.`revenue`) as "c_revenue", SUM(`rev`.`orders`) as "c_orders", `nm`.`country` as "country" FROM 
+
+( SELECT *, SUM(total_sales) as "revenue", count(order_id) as "orders"  FROM `wp_wc_order_stats` WHERE {{utils.timeframe()[0]}} GROUP BY customer_id ORDER BY `revenue` DESC LIMIT 20) as rev
+LEFT JOIN 
+( SELECT * FROM `wp_wc_customer_lookup`  ) as nm
+
+ON `rev`.`customer_id` = `nm`.`customer_id` GROUP BY `nm`.`country`
